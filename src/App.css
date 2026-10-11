@@ -1,0 +1,249 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 14px 24px;
+  flex-wrap: wrap;
+}
+
+.navbar-brand a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-card {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.95em;
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background-color: #2980b9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #21618c;
+}
+
+.btn-secondary {
+  background-color: #bdc3c7;
+  color: #222;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #2980b9;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+.btn-link.danger {
+  color: #c0392b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  margin-top: 16px;
+  width: fit-content;
+}
+
+select {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background-color: #ecf0f1;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab.active {
+  background-color: #2980b9;
+  color: white;
+  border-color: #2980b9;
+}
+
+.error {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.success {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* ===== NEW styles for the added features ===== */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-bar input[type="text"],
+.filter-bar input:not([type]) {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-bar select {
+  margin-top: 0;
+}
+
+.inline-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  background-color: #2980b9;
+  color: white;
+}
+
+.badge-red { background-color: #c0392b; }
+.badge-grey { background-color: #7f8c8d; }
+
+.stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 120px;
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 { margin: 0; font-size: 1.8em; color: #2980b9; }
+.stat-box p { margin: 4px 0 0; color: #666; }
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
